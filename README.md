@@ -3,6 +3,7 @@
 Este repositório contém implementações práticas dos 5 princípios SOLID em Java, demonstrando conceitos fundamentais de engenharia de software e design orientado a objetos.
 
 > **📄 Baseado no documento:** "João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf"  
+> **Disciplina:** Engenharia de Software: do Requisito ao Projeto  
 > **Capítulo:** 10 - Princípios SOLID  
 > **Autor:** João Cláudio Fernandes Michelato Colaço
 
@@ -242,6 +243,7 @@ mvn clean compile exec:java
 - Dependências abstraídas através de interfaces
 - Controladores específicos para cada caso de uso
 - Baixo acoplamento entre camadas
+- Aplicação de padrões GRASP (Expert, Creator)
 
 ## 🧪 Testes
 
@@ -275,7 +277,15 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 📚 Referências
 
 ### 📖 Material Base
-- **"João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf"** - Documento original contendo a especificação completa dos exercícios e teoria dos Princípios SOLID (Capítulo 10)
+- **"Exercícios SOLID"** - Documento original da disciplina "Engenharia de Software: do Requisito ao Projeto"
+- **Autor:** João Cláudio Fernandes Michelato Colaço
+- **Capítulo 10:** Princípios SOLID
+- **Conteúdo:** 5 exercícios práticos demonstrando violações e refatorações dos princípios SOLID
+  - Exercício 1: Single Responsibility Principle (SRP) - GerenciadorArquivos
+  - Exercício 2: Open/Closed Principle (OCP) - CalculadoraImpostos  
+  - Exercício 3: Liskov Substitution Principle (LSP) - Retângulo/Quadrado
+  - Exercício 4: Interface Segregation Principle (ISP) - Interface Documento
+  - Exercício 5: Dependency Inversion Principle (DIP) - Sistema de Biblioteca com padrões GRASP
 
 ### 📚 Bibliografia Complementar
 - **Clean Code: A Handbook of Agile Software Craftsmanship** - Robert C. Martin
