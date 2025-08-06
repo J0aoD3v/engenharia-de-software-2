@@ -146,12 +146,12 @@ Este projeto está sob a licença MIT. Veja o arquivo [capitulo10-principios-sol
 
 ## 👨‍💻 Autor & Mantenedor
 
-**Desenvolvido por:** [Seu Nome]  
+**Desenvolvido por:** João Cláudio Fernandes Michelato Colaço  
 **Baseado no livro de:** Prof. André Menolli  
 **Disciplina:** Engenharia de Software 2
 
-- 📧 Email: [seu-email@university.edu]
-- 💼 LinkedIn: [seu-linkedin]
+- 📧 Email: jcmichelato8@gmail.com
+- 💼 LinkedIn: [j0aod3v](https://www.linkedin.com/in/j0aod3v/)
 - 🐙 GitHub: [@J0aoD3v](https://github.com/J0aoD3v)
 
 ---
