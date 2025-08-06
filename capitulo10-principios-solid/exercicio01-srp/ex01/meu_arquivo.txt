@@ -1,3 +1,0 @@
-Este é um exemplo de arquivo de texto.
-Ele tem várias linhas e palavras.
-SOLID é muito importante.
