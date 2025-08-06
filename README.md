@@ -1,4 +1,11 @@
-# 📚 Engenharia de Software 2 - Material de Estudos
+# 📚 Engenharia de Software - **Conceitos de Projeto de - **Tipos de Teste** - Unidade, integração, sistema
+- **Categorias** - Caixa preta, caixa branca, caixa cinza
+
+## 📁 Estrutura do Repositórioware** - Abstração, encapsulamento, coesão e acoplamento
+
+### 🏗️ **Seção 3 - Arquitetura de Software**
+
+Design de alto nível do sistema:aterial de Estudos
 
 Este repositório contém materiais práticos e exercícios da disciplina **Engenharia de Software 2**, baseados no livro **"Engenharia de Software: Do Requisito ao Projeto"** do Professor **André Menolli** (2024).
 
@@ -14,32 +21,42 @@ Este repositório contém materiais práticos e exercícios da disciplina **Enge
 O material didático é estruturado em **cinco seções principais**, cobrindo as fases essenciais da engenharia de software:
 
 ### 📋 **Seção 1 - Requisitos**
+
 Técnicas modernas e tradicionais para levantamento e documentação de requisitos:
+
 - **Histórias de Usuário (User Stories)** - Técnica ágil para capturar funcionalidades
 - **Casos de Uso (Use Cases)** - Técnica formal para descrever interações sistema-ator
 - **Diagrama de Atividades** - Visualização de fluxos de trabalho e processos complexos
 
 ### 🔍 **Seção 2 - Análise de Projeto**
+
 Tradução dos requisitos em modelo conceitual do sistema:
+
 - **Modelo de Classe de Análise** - Identificação de classes, atributos e relacionamentos
 - **Conceitos de Projeto de Software** - Abstração, encapsulamento, coesão e acoplamento
 
 ### �️ **Seção 3 - Arquitetura de Software**
+
 Design de alto nível do sistema:
+
 - **Importância da Arquitetura** - Tipos e visões arquiteturais
 - **Atributos de Qualidade** - Desempenho, segurança, modificabilidade
 - **Padrões Arquiteturais** - Camadas, MVC, Cliente-Servidor
 
-### 🛠️ **Seção 4 - Projeto de Software** *(Foco Principal)*
+### 🛠️ **Seção 4 - Projeto de Software** _(Foco Principal)_
+
 Construção detalhada do projeto de software:
+
 - **Modelo de Projeto de Domínio** - Evolução do modelo de análise com padrões GRASP
-- **Princípios SOLID** - *[Implementado neste repositório]* ✅
+- **Princípios SOLID** - _[Implementado neste repositório]_ ✅
 - **Diagrama de Sequência** - Modelagem de interações dinâmicas entre objetos
 - **Projeto da Interface com o Usuário** - Padrões MVC e MVP
 - **Persistência de Dados** - ORM (Hibernate/JPA), NoSQL, padrões DAO e Factory
 
 ### 🧪 **Seção 5 - Teste de Software**
+
 Verificação e validação:
+
 - **Tipos de Teste** - Unidade, integração, sistema
 - **Categorias** - Caixa preta, caixa branca, caixa cinza
 
@@ -49,7 +66,7 @@ Verificação e validação:
 📦 engenharia-de-software-2/
 ├── 📁 capitulo10-principios-solid/     # ✅ IMPLEMENTADO
 │   ├── 📁 exercicio01-srp/             # Single Responsibility Principle
-│   ├── 📁 exercicio02-ocp/             # Open/Closed Principle  
+│   ├── 📁 exercicio02-ocp/             # Open/Closed Principle
 │   ├── 📁 exercicio03-lsp/             # Liskov Substitution Principle
 │   ├── 📁 exercicio04-isp/             # Interface Segregation Principle
 │   ├── 📁 exercicio05-dip/             # Dependency Inversion Principle + GRASP
@@ -57,7 +74,7 @@ Verificação e validação:
 │   ├── 📄 LICENSE                      # Licença MIT
 │   └── 📄 "João Cláudio Fernandes... - Exercícios SOLID.pdf"
 ├── 📁 capitulo-XX-requisitos/          # 🚧 PLANEJADO
-├── 📁 capitulo-XX-analise/             # 🚧 PLANEJADO  
+├── 📁 capitulo-XX-analise/             # 🚧 PLANEJADO
 ├── 📁 capitulo-XX-arquitetura/         # 🚧 PLANEJADO
 ├── 📁 capitulo-XX-padroes-grasp/       # 🚧 PLANEJADO
 ├── 📁 capitulo-XX-persistencia/        # 🚧 PLANEJADO
@@ -68,12 +85,13 @@ Verificação e validação:
 ## 🎓 Material Implementado
 
 ### ✅ **Capítulo 10 - Princípios SOLID**
+
 **Status:** Completamente implementado e testado
 
 Implementação prática dos 5 princípios SOLID em Java, demonstrando violações e refatorações conforme especificação acadêmica:
 
 1. **SRP** - Single Responsibility Principle
-2. **OCP** - Open/Closed Principle  
+2. **OCP** - Open/Closed Principle
 3. **LSP** - Liskov Substitution Principle
 4. **ISP** - Interface Segregation Principle
 5. **DIP** - Dependency Inversion Principle + Padrões GRASP
@@ -91,12 +109,14 @@ Implementação prática dos 5 princípios SOLID em Java, demonstrando violaçõ
 ## 🚀 Como Usar Este Repositório
 
 ### Para Estudantes:
+
 1. **Clone o repositório:** `git clone https://github.com/J0aoD3v/engenharia-de-software-2.git`
 2. **Navegue pelos capítulos** conforme o cronograma da disciplina
 3. **Execute os exemplos** seguindo as instruções de cada pasta
 4. **Estude o código** comparando com a teoria do livro
 
 ### Para Professores:
+
 - Material pronto para uso em aulas práticas
 - Exemplos implementados seguindo boas práticas acadêmicas
 - Documentação detalhada para facilitar explicações
@@ -104,14 +124,16 @@ Implementação prática dos 5 princípios SOLID em Java, demonstrando violaçõ
 ## 📚 Referências Bibliográficas
 
 ### 📘 Livro Base
-**MENOLLI, André.** *Engenharia de Software: Do Requisito ao Projeto.* 2024.
+
+**MENOLLI, André.** _Engenharia de Software: Do Requisito ao Projeto._ 2024.
 
 ### 📖 Bibliografia Complementar Selecionada
-- **LARMAN, Craig.** *Utilizando UML e Padrões.* 3ª edição, Bookman, 2007.
-- **MARTIN, Robert C.** *Design principles and design patterns.* Object Mentor, 2000.
-- **GAMMA, E., et al.** *Padrões de Projeto.* Ed Bookman.
-- **FOWLER, Martin.** *UML Essencial: Um breve guia para a linguagem-padrão de modelagem de objetos.* Pearson Education, 2004.
-- **PRESSMAN, R., MAXIM, B.** *Engenharia de Software.* 8ª/9ª edição, AMGH, 2016/2021.
+
+- **LARMAN, Craig.** _Utilizando UML e Padrões._ 3ª edição, Bookman, 2007.
+- **MARTIN, Robert C.** _Design principles and design patterns._ Object Mentor, 2000.
+- **GAMMA, E., et al.** _Padrões de Projeto._ Ed Bookman.
+- **FOWLER, Martin.** _UML Essencial: Um breve guia para a linguagem-padrão de modelagem de objetos._ Pearson Education, 2004.
+- **PRESSMAN, R., MAXIM, B.** _Engenharia de Software._ 8ª/9ª edição, AMGH, 2016/2021.
 
 > 📝 **Nota:** Lista completa de referências disponível no material fonte do Professor André Menolli.
 
@@ -133,7 +155,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [capitulo10-principios-sol
 
 **Desenvolvido por:** [Seu Nome]  
 **Baseado no livro de:** Prof. André Menolli  
-**Disciplina:** Engenharia de Software 2  
+**Disciplina:** Engenharia de Software 2
 
 - 📧 Email: [seu-email@university.edu]
 - 💼 LinkedIn: [seu-linkedin]
