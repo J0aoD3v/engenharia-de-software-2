@@ -1,155 +1,44 @@
-# 📚 Engenharia de Software 2 - Material de Estudos
+# 📚 Exercícios SOLID - Capítulo 10
 
-Este repositório contém materiais práticos e exercícios da disciplina **Engenharia de Software 2**, baseados no livro **"Engenharia de Software: Do Requisito ao Projeto"** do Professor **André Menolli** (2024).
+Este repositório contém implementações práticas dos 5 princípios SOLID em Java, demonstrando conceitos fundamentais de engenharia de software e design orientado a objetos.
 
-## 📖 Sobre o Livro Base
+> **📄 Baseado no documento:** "João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf"  
+> **Disciplina:** Engenharia de Software: do Requisito ao Projeto  
+> **Capítulo:** 10 - Princípios SOLID  
+> **Autor:** João Cláudio Fernandes Michelato Colaço
 
-**Título:** Engenharia de Software: Do Requisito ao Projeto  
-**Autor:** André Menolli  
-**Ano:** 2024  
-**Objetivo:** Guiar o leitor através do ciclo de vida completo do desenvolvimento de software, com foco no paradigma Orientado a Objetos, demonstrando como transformar requisitos iniciais em um projeto de software robusto, coeso e de baixo acoplamento.
+## 🎯 Objetivos
 
-## 🎯 Estrutura da Disciplina
+- Compreender e aplicar os princípios SOLID
+- Demonstrar boas práticas de design de software
+- Implementar código limpo e maintível
+- Exemplificar refatoração de código
 
-O material didático é estruturado em **cinco seções principais**, cobrindo as fases essenciais da engenharia de software:
-
-### 📋 **Seção 1 - Requisitos**
-Técnicas modernas e tradicionais para levantamento e documentação de requisitos:
-- **Histórias de Usuário (User Stories)** - Técnica ágil para capturar funcionalidades
-- **Casos de Uso (Use Cases)** - Técnica formal para descrever interações sistema-ator
-- **Diagrama de Atividades** - Visualização de fluxos de trabalho e processos complexos
-
-### 🔍 **Seção 2 - Análise de Projeto**
-Tradução dos requisitos em modelo conceitual do sistema:
-- **Modelo de Classe de Análise** - Identificação de classes, atributos e relacionamentos
-- **Conceitos de Projeto de Software** - Abstração, encapsulamento, coesão e acoplamento
-
-### �️ **Seção 3 - Arquitetura de Software**
-Design de alto nível do sistema:
-- **Importância da Arquitetura** - Tipos e visões arquiteturais
-- **Atributos de Qualidade** - Desempenho, segurança, modificabilidade
-- **Padrões Arquiteturais** - Camadas, MVC, Cliente-Servidor
-
-### 🛠️ **Seção 4 - Projeto de Software** *(Foco Principal)*
-Construção detalhada do projeto de software:
-- **Modelo de Projeto de Domínio** - Evolução do modelo de análise com padrões GRASP
-- **Princípios SOLID** - *[Implementado neste repositório]* ✅
-- **Diagrama de Sequência** - Modelagem de interações dinâmicas entre objetos
-- **Projeto da Interface com o Usuário** - Padrões MVC e MVP
-- **Persistência de Dados** - ORM (Hibernate/JPA), NoSQL, padrões DAO e Factory
-
-### 🧪 **Seção 5 - Teste de Software**
-Verificação e validação:
-- **Tipos de Teste** - Unidade, integração, sistema
-- **Categorias** - Caixa preta, caixa branca, caixa cinza
-
-## � Estrutura do Repositório
+## 📋 Estrutura do Projeto
 
 ```
-📦 engenharia-de-software-2/
-├── 📁 capitulo10-principios-solid/     # ✅ IMPLEMENTADO
-│   ├── 📁 exercicio01-srp/             # Single Responsibility Principle
-│   ├── 📁 exercicio02-ocp/             # Open/Closed Principle  
-│   ├── 📁 exercicio03-lsp/             # Liskov Substitution Principle
-│   ├── 📁 exercicio04-isp/             # Interface Segregation Principle
-│   ├── 📁 exercicio05-dip/             # Dependency Inversion Principle + GRASP
-│   ├── 📄 README.md                    # Documentação específica do capítulo
-│   ├── 📄 LICENSE                      # Licença MIT
-│   └── 📄 "João Cláudio Fernandes... - Exercícios SOLID.pdf"
-├── 📁 capitulo-XX-requisitos/          # 🚧 PLANEJADO
-├── 📁 capitulo-XX-analise/             # 🚧 PLANEJADO  
-├── 📁 capitulo-XX-arquitetura/         # 🚧 PLANEJADO
-├── 📁 capitulo-XX-padroes-grasp/       # 🚧 PLANEJADO
-├── 📁 capitulo-XX-persistencia/        # 🚧 PLANEJADO
-├── 📁 capitulo-XX-testes/              # 🚧 PLANEJADO
-└── 📄 README.md                        # Este arquivo - Visão geral da disciplina
+📦 capitulo10-principios-solid/
+├── 📁 exercicio01-srp/ - Single Responsibility Principle (SRP)
+├── 📁 exercicio02-ocp/ - Open/Closed Principle (OCP)
+├── 📁 exercicio03-lsp/ - Liskov Substitution Principle (LSP)
+├── 📁 exercicio04-isp/ - Interface Segregation Principle (ISP)
+├── 📁 exercicio05-dip/ - Dependency Inversion Principle (DIP) + GRASP
+├── 📄 README.md - Documentação completa
+├── 📄 LICENSE - Licença MIT
+└── 📄 "João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf" - Material fonte
 ```
-
-## 🎓 Material Implementado
-
-### ✅ **Capítulo 10 - Princípios SOLID**
-**Status:** Completamente implementado e testado
-
-Implementação prática dos 5 princípios SOLID em Java, demonstrando violações e refatorações conforme especificação acadêmica:
-
-1. **SRP** - Single Responsibility Principle
-2. **OCP** - Open/Closed Principle  
-3. **LSP** - Liskov Substitution Principle
-4. **ISP** - Interface Segregation Principle
-5. **DIP** - Dependency Inversion Principle + Padrões GRASP
-
-**🔗 Acesse:** [`capitulo10-principios-solid/`](./capitulo10-principios-solid/)
 
 ## 🔧 Tecnologias Utilizadas
 
-- **Java 11+** - Linguagem principal para implementações
-- **Maven** - Gerenciamento de dependências e build
-- **Git** - Controle de versão
-- **VS Code / NetBeans** - IDEs de desenvolvimento
-- **JUnit** - Framework de testes (quando aplicável)
-
-## 🚀 Como Usar Este Repositório
-
-### Para Estudantes:
-1. **Clone o repositório:** `git clone https://github.com/J0aoD3v/engenharia-de-software-2.git`
-2. **Navegue pelos capítulos** conforme o cronograma da disciplina
-3. **Execute os exemplos** seguindo as instruções de cada pasta
-4. **Estude o código** comparando com a teoria do livro
-
-### Para Professores:
-- Material pronto para uso em aulas práticas
-- Exemplos implementados seguindo boas práticas acadêmicas
-- Documentação detalhada para facilitar explicações
-
-## 📚 Referências Bibliográficas
-
-### 📘 Livro Base
-**MENOLLI, André.** *Engenharia de Software: Do Requisito ao Projeto.* 2024.
-
-### 📖 Bibliografia Complementar Selecionada
-- **LARMAN, Craig.** *Utilizando UML e Padrões.* 3ª edição, Bookman, 2007.
-- **MARTIN, Robert C.** *Design principles and design patterns.* Object Mentor, 2000.
-- **GAMMA, E., et al.** *Padrões de Projeto.* Ed Bookman.
-- **FOWLER, Martin.** *UML Essencial: Um breve guia para a linguagem-padrão de modelagem de objetos.* Pearson Education, 2004.
-- **PRESSMAN, R., MAXIM, B.** *Engenharia de Software.* 8ª/9ª edição, AMGH, 2016/2021.
-
-> 📝 **Nota:** Lista completa de referências disponível no material fonte do Professor André Menolli.
-
-## 🤝 Contribuições
-
-Este é um material educacional em constante evolução. Contribuições são bem-vindas:
-
-1. **Fork** o projeto
-2. **Crie uma branch** para sua contribuição (`git checkout -b feature/nova-implementacao`)
-3. **Commit** suas mudanças (`git commit -am 'Adiciona implementação do Capítulo X'`)
-4. **Push** para a branch (`git push origin feature/nova-implementacao`)
-5. **Abra um Pull Request**
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👨‍💻 Autor & Mantenedor
-
-**Desenvolvido por:** [Seu Nome]  
-**Baseado no livro de:** Prof. André Menolli  
-**Disciplina:** Engenharia de Software 2  
-
-- 📧 Email: [seu-email@university.edu]
-- 💼 LinkedIn: [seu-linkedin]
-- 🐙 GitHub: [@J0aoD3v](https://github.com/J0aoD3v)
-
----
-
-⭐ **Se este material foi útil para seus estudos, deixe uma estrela!** ⭐
-
-> 💡 **Dica de Estudo:** Cada capítulo implementado neste repositório corresponde diretamente aos conceitos teóricos apresentados no livro. Recomenda-se estudar a teoria antes de analisar o código prático.
+- **Java 11+**
+- **Maven** (gerenciamento de dependências)
+- **VS Code / NetBeans** (IDEs)
 
 ## 📚 Exercícios Implementados
 
 ### 🎯 Exercício 1: Single Responsibility Principle (SRP)
 
-**Pasta:** `ex01/`
+**Pasta:** `exercicio01-srp/`
 
 **Conceito:** Cada classe deve ter apenas uma razão para mudar.
 
@@ -163,7 +52,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 **Execução:**
 
 ```bash
-cd ex01/src/main/java
+cd exercicio01-srp/src/main/java
 javac -d ../../../target/classes eng2/solid/ex01/*.java
 cd ../../../target/classes
 java eng2.solid.ex01.Ex01
@@ -173,7 +62,7 @@ java eng2.solid.ex01.Ex01
 
 ### 🎯 Exercício 2: Open/Closed Principle (OCP)
 
-**Pasta:** `ex02/`
+**Pasta:** `exercicio02-ocp/`
 
 **Conceito:** Classes devem estar abertas para extensão, mas fechadas para modificação.
 
@@ -198,7 +87,7 @@ Valor do IPI a ser pago: 100.0
 **Execução:**
 
 ```bash
-cd ex02/src/main/java
+cd exercicio02-ocp/src/main/java
 javac -d ../../../target/classes eng2/solid/ex02/*.java
 cd ../../../target/classes
 java eng2.solid.ex02.Main
@@ -208,7 +97,7 @@ java eng2.solid.ex02.Main
 
 ### 🎯 Exercício 3: Liskov Substitution Principle (LSP)
 
-**Pasta:** `ex03/`
+**Pasta:** `exercicio03-lsp/`
 
 **Conceito:** Objetos de uma superclasse devem ser substituíveis por objetos de suas subclasses.
 
@@ -230,7 +119,7 @@ java eng2.solid.ex02.Main
 **Execução:**
 
 ```bash
-cd ex03/src/main/java
+cd exercicio03-lsp/src/main/java
 javac -d ../../../target/classes eng2/solid/ex03/*.java
 cd ../../../target/classes
 java eng2.solid.ex03.Main
@@ -240,7 +129,7 @@ java eng2.solid.ex03.Main
 
 ### 🎯 Exercício 4: Interface Segregation Principle (ISP)
 
-**Pasta:** `ex04/`
+**Pasta:** `exercicio04-isp/`
 
 **Conceito:** Clientes não devem ser forçados a depender de interfaces que não usam.
 
@@ -273,7 +162,7 @@ PDF impresso.
 **Execução:**
 
 ```bash
-cd ex04/src/main/java
+cd exercicio04-isp/src/main/java
 javac -d ../../../target/classes eng2/solid/ex04/*.java
 cd ../../../target/classes
 java eng2.solid.ex04.Main
@@ -283,7 +172,7 @@ java eng2.solid.ex04.Main
 
 ### 🎯 Exercício 5: Dependency Inversion Principle (DIP) + Refatoração
 
-**Pasta:** `ex05/`
+**Pasta:** `exercicio05-dip/`
 
 **Conceito:** Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
 
@@ -318,7 +207,7 @@ Data de devolução calculada: 2025-08-26
 **Execução:**
 
 ```bash
-cd ex05/src/main/java
+cd exercicio05-dip/src/main/java
 javac -d ../../../target/classes eng2/solid/ex05/*.java
 cd ../../../target/classes
 java eng2.solid.ex05.Main
