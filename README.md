@@ -2,6 +2,10 @@
 
 Este repositório contém implementações práticas dos 5 princípios SOLID em Java, demonstrando conceitos fundamentais de engenharia de software e design orientado a objetos.
 
+> **📄 Baseado no documento:** "João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf"  
+> **Capítulo:** 10 - Princípios SOLID  
+> **Autor:** João Cláudio Fernandes Michelato Colaço
+
 ## 🎯 Objetivos
 
 - Compreender e aplicar os princípios SOLID
@@ -270,10 +274,20 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📚 Referências
 
-- Clean Code - Robert C. Martin
-- Design Patterns - Gang of Four
-- SOLID Principles - Robert C. Martin
-- Princípios de Engenharia de Software
+### 📖 Material Base
+- **"João Cláudio Fernandes Michelato Colaço - Exercícios SOLID.pdf"** - Documento original contendo a especificação completa dos exercícios e teoria dos Princípios SOLID (Capítulo 10)
+
+### 📚 Bibliografia Complementar
+- **Clean Code: A Handbook of Agile Software Craftsmanship** - Robert C. Martin
+- **Design Patterns: Elements of Reusable Object-Oriented Software** - Gang of Four (Gamma, Helm, Johnson, Vlissides)
+- **Agile Software Development, Principles, Patterns, and Practices** - Robert C. Martin
+- **Clean Architecture: A Craftsman's Guide to Software Structure and Design** - Robert C. Martin
+
+### 🔗 Links Úteis
+- [SOLID Principles Explained](https://en.wikipedia.org/wiki/SOLID)
+- [Clean Code Developer](https://clean-code-developer.com/)
+- [Martin Fowler's Refactoring](https://refactoring.com/)
+- [Object-Oriented Design Principles](https://www.oodesign.com/)
 
 ---
 
