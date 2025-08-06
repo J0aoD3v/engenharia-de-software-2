@@ -304,9 +304,9 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 **João Cláudio Fernandes Michelato Colaço**
 
-- 📧 Email: [seu-email@example.com]
-- 💼 LinkedIn: [seu-linkedin]
-- 🐙 GitHub: [seu-usuario]
+- 📧 Email: jcmichelato8@gmail.com
+- 💼 LinkedIn: [j0aod3v](https://www.linkedin.com/in/j0aod3v/)
+- 🐙 GitHub: [@J0aoD3v](https://github.com/J0aoD3v)
 
 ## 📚 Referências
 
