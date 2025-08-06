@@ -1,19 +1,19 @@
 package eng2.solid.ex05;
 
 public class Livro {
-    private String titulo;
-    private String autor;
+    private Titulo titulo;
+    private String codigoExemplar;
 
-    public Livro(String titulo, String autor) {
+    public Livro(Titulo titulo, String codigoExemplar) {
         this.titulo = titulo;
-        this.autor = autor;
+        this.codigoExemplar = codigoExemplar;
     }
 
-    public String getTitulo() {
+    public Titulo getTitulo() {
         return titulo;
     }
 
-    public String getAutor() {
-        return autor;
+    public String getCodigoExemplar() {
+        return codigoExemplar;
     }
 }

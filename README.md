@@ -164,20 +164,29 @@ java eng2.solid.ex04.Main
 **Conceito:** Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
 
 **Classes:**
-- `Livro.java` - Modelo de dados
-- `Aluno.java` - Entidade com responsabilidade de criar empréstimos
-- `Emprestimo.java` - Entidade especialista em cálculos de devolução
-- `IEmprestarLivro.java` - Interface para caso de uso de empréstimo
-- `EmprestarLivroController.java` - Controlador específico para empréstimos
-- `Main.java` - Demonstração da inversão de dependência
+- `Livro.java` - Modelo de dados com referência ao Título
+- `Titulo.java` - Entidade que conhece seu prazo de empréstimo (GRASP Expert)
+- `ItemEmprestimo.java` - Relaciona livro com título para o empréstimo
+- `Aluno.java` - Entidade com responsabilidade de criar empréstimos (GRASP Creator)
+- `Emprestimo.java` - Entidade especialista em cálculos de devolução baseado nos prazos dos títulos
+- `IEmprestarLivro.java` - Interface para caso de uso de empréstimo (DIP)
+- `EmprestarLivroController.java` - Controlador específico para empréstimos (SRP)
+- `Main.java` - Demonstração da inversão de dependência e padrões GRASP
 
 **Saída Esperada:**
 ```
 --- INICIANDO CASO DE USO: EMPRESTAR LIVRO ---
 Aluno João Silva realizou um empréstimo.
-Data de devolução calculada: 2025-08-19
+Data de devolução calculada: 2025-08-26
 --- FIM DO CASO DE USO ---
 ```
+
+**Detalhes da Implementação:**
+- ✅ **GRASP Expert:** `Titulo` conhece seu prazo, `Emprestimo` calcula data baseada nos prazos
+- ✅ **GRASP Creator:** `Aluno` cria `Emprestimo`, `Emprestimo` cria `ItemEmprestimo`
+- ✅ **DIP:** Dependência da interface `IEmprestarLivro`, não da implementação
+- ✅ **SRP:** Controlador focado apenas em coordenar o caso de uso
+- ✅ **ISP:** Interface específica por caso de uso (evita God Object)
 
 **Execução:**
 ```bash

@@ -5,10 +5,13 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // Configuração inicial
+        // Configuração inicial com Titulos e seus prazos específicos
+        Titulo tituloCleanCode = new Titulo("Clean Code", "Robert C. Martin", 14);
+        Titulo tituloDesignPatterns = new Titulo("Design Patterns", "GoF", 21);
+        
         Aluno joao = new Aluno("João Silva");
-        Livro cleanCode = new Livro("Clean Code", "Robert C. Martin");
-        Livro designPatterns = new Livro("Design Patterns", "GoF");
+        Livro cleanCode = new Livro(tituloCleanCode, "EX001");
+        Livro designPatterns = new Livro(tituloDesignPatterns, "EX002");
         List<Livro> livrosParaEmprestar = Arrays.asList(cleanCode, designPatterns);
 
         // A interface do usuário (simulada aqui pelo Main)
