@@ -41,12 +41,14 @@ Este repositório contém implementações práticas dos 5 princípios SOLID em 
 **Conceito:** Cada classe deve ter apenas uma razão para mudar.
 
 **Classes:**
+
 - `LeitorDeArquivo.java` - Responsável apenas por ler arquivos
 - `AnalisadorDeConteudo.java` - Responsável apenas por analisar conteúdo
 - `ExibidorDeResultados.java` - Responsável apenas por exibir resultados
 - `ResultadoAnalise.java` - Modelo de dados para o resultado
 
 **Execução:**
+
 ```bash
 cd ex01/src/main/java
 javac -d ../../../target/classes eng2/solid/ex01/*.java
@@ -63,6 +65,7 @@ java eng2.solid.ex01.Ex01
 **Conceito:** Classes devem estar abertas para extensão, mas fechadas para modificação.
 
 **Classes:**
+
 - `CalculoImposto.java` - Interface para estratégias de cálculo
 - `CalculoICMS.java` - Implementação para ICMS (18%)
 - `CalculoISS.java` - Implementação para ISS (5%)
@@ -71,6 +74,7 @@ java eng2.solid.ex01.Ex01
 - `Main.java` - Demonstração do padrão Strategy
 
 **Saída Esperada:**
+
 ```
 --- Cálculos de Impostos (OCP) ---
 Valor do ICMS a ser pago: 180.0
@@ -79,6 +83,7 @@ Valor do IPI a ser pago: 100.0
 ```
 
 **Execução:**
+
 ```bash
 cd ex02/src/main/java
 javac -d ../../../target/classes eng2/solid/ex02/*.java
@@ -95,12 +100,14 @@ java eng2.solid.ex02.Main
 **Conceito:** Objetos de uma superclasse devem ser substituíveis por objetos de suas subclasses.
 
 **Classes:**
+
 - `FormaGeometrica.java` - Interface comum para formas
 - `Retangulo.java` - Implementação para retângulos
 - `Quadrado.java` - Implementação específica para quadrados
 - `Main.java` - Demonstração da substituibilidade
 
 **Saída Esperada:**
+
 ```
 --- Cálculo de Áreas (LSP) ---
 Área do retângulo: 50
@@ -108,6 +115,7 @@ java eng2.solid.ex02.Main
 ```
 
 **Execução:**
+
 ```bash
 cd ex03/src/main/java
 javac -d ../../../target/classes eng2/solid/ex03/*.java
@@ -124,6 +132,7 @@ java eng2.solid.ex03.Main
 **Conceito:** Clientes não devem ser forçados a depender de interfaces que não usam.
 
 **Classes:**
+
 - `Documento.java` - Interface básica (criar, visualizar)
 - `Editavel.java` - Interface específica para edição
 - `Imprimivel.java` - Interface específica para impressão
@@ -132,6 +141,7 @@ java eng2.solid.ex03.Main
 - `Main.java` - Demonstração da segregação
 
 **Saída Esperada:**
+
 ```
 --- Manipulando Documentos (ISP) ---
 
@@ -148,6 +158,7 @@ PDF impresso.
 ```
 
 **Execução:**
+
 ```bash
 cd ex04/src/main/java
 javac -d ../../../target/classes eng2/solid/ex04/*.java
@@ -164,6 +175,7 @@ java eng2.solid.ex04.Main
 **Conceito:** Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
 
 **Classes:**
+
 - `Livro.java` - Modelo de dados com referência ao Título
 - `Titulo.java` - Entidade que conhece seu prazo de empréstimo (GRASP Expert)
 - `ItemEmprestimo.java` - Relaciona livro com título para o empréstimo
@@ -174,6 +186,7 @@ java eng2.solid.ex04.Main
 - `Main.java` - Demonstração da inversão de dependência e padrões GRASP
 
 **Saída Esperada:**
+
 ```
 --- INICIANDO CASO DE USO: EMPRESTAR LIVRO ---
 Aluno João Silva realizou um empréstimo.
@@ -182,6 +195,7 @@ Data de devolução calculada: 2025-08-26
 ```
 
 **Detalhes da Implementação:**
+
 - ✅ **GRASP Expert:** `Titulo` conhece seu prazo, `Emprestimo` calcula data baseada nos prazos
 - ✅ **GRASP Creator:** `Aluno` cria `Emprestimo`, `Emprestimo` cria `ItemEmprestimo`
 - ✅ **DIP:** Dependência da interface `IEmprestarLivro`, não da implementação
@@ -189,6 +203,7 @@ Data de devolução calculada: 2025-08-26
 - ✅ **ISP:** Interface específica por caso de uso (evita God Object)
 
 **Execução:**
+
 ```bash
 cd ex05/src/main/java
 javac -d ../../../target/classes eng2/solid/ex05/*.java
@@ -199,18 +214,21 @@ java eng2.solid.ex05.Main
 ## 🚀 Como Executar
 
 ### Pré-requisitos
+
 - Java 11 ou superior
 - Maven (opcional, para builds automatizados)
 
 ### Execução Manual (todos os projetos)
 
 1. **Clone o repositório:**
+
 ```bash
 git clone https://github.com/[seu-usuario]/solid-exercises.git
 cd solid-exercises
 ```
 
 2. **Execute qualquer exercício:**
+
 ```bash
 # Exemplo para ex02
 cd ex02/src/main/java
@@ -229,26 +247,31 @@ mvn clean compile exec:java
 ## 📖 Conceitos Aplicados
 
 ### 🔹 Single Responsibility Principle (SRP)
+
 - Cada classe tem uma única responsabilidade
 - Facilita manutenção e testes
 - Reduz acoplamento
 
 ### 🔹 Open/Closed Principle (OCP)
+
 - Padrão Strategy implementado
 - Extensível sem modificação do código existente
 - Novas estratégias podem ser adicionadas facilmente
 
 ### 🔹 Liskov Substitution Principle (LSP)
+
 - Interfaces bem definidas
 - Subtipos são verdadeiramente substituíveis
 - Contratos respeitados em todas as implementações
 
 ### 🔹 Interface Segregation Principle (ISP)
+
 - Interfaces específicas e coesas
 - Clientes dependem apenas do que realmente usam
 - Evita implementações desnecessárias
 
 ### 🔹 Dependency Inversion Principle (DIP)
+
 - Dependências abstraídas através de interfaces
 - Controladores específicos para cada caso de uso
 - Baixo acoplamento entre camadas
@@ -286,23 +309,26 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 📚 Referências
 
 ### 📖 Material Base
+
 - **"Exercícios SOLID"** - Documento original da disciplina "Engenharia de Software: do Requisito ao Projeto"
 - **Autor:** João Cláudio Fernandes Michelato Colaço
 - **Capítulo 10:** Princípios SOLID
 - **Conteúdo:** 5 exercícios práticos demonstrando violações e refatorações dos princípios SOLID
   - Exercício 1: Single Responsibility Principle (SRP) - GerenciadorArquivos
-  - Exercício 2: Open/Closed Principle (OCP) - CalculadoraImpostos  
+  - Exercício 2: Open/Closed Principle (OCP) - CalculadoraImpostos
   - Exercício 3: Liskov Substitution Principle (LSP) - Retângulo/Quadrado
   - Exercício 4: Interface Segregation Principle (ISP) - Interface Documento
   - Exercício 5: Dependency Inversion Principle (DIP) - Sistema de Biblioteca com padrões GRASP
 
 ### 📚 Bibliografia Complementar
+
 - **Clean Code: A Handbook of Agile Software Craftsmanship** - Robert C. Martin
 - **Design Patterns: Elements of Reusable Object-Oriented Software** - Gang of Four (Gamma, Helm, Johnson, Vlissides)
 - **Agile Software Development, Principles, Patterns, and Practices** - Robert C. Martin
 - **Clean Architecture: A Craftsman's Guide to Software Structure and Design** - Robert C. Martin
 
 ### 🔗 Links Úteis
+
 - [SOLID Principles Explained](https://en.wikipedia.org/wiki/SOLID)
 - [Clean Code Developer](https://clean-code-developer.com/)
 - [Martin Fowler's Refactoring](https://refactoring.com/)

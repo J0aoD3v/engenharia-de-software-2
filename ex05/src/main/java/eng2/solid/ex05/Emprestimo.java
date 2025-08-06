@@ -14,7 +14,7 @@ public class Emprestimo {
         this.aluno = aluno;
         this.dataEmprestimo = LocalDate.now();
         this.itensEmprestimo = new ArrayList<>();
-        
+
         // Emprestimo cria seus ItemEmprestimo (GRASP Creator)
         for (Livro livro : livros) {
             ItemEmprestimo item = new ItemEmprestimo(livro, livro.getTitulo());
@@ -26,7 +26,7 @@ public class Emprestimo {
     // Ele percorre seus itens e usa o prazo do Titulo de cada um
     public void calcularDataDevolucao() {
         int maiorPrazo = 0;
-        
+
         // Encontra o maior prazo entre todos os títulos
         for (ItemEmprestimo item : itensEmprestimo) {
             int prazoItem = item.getPrazoEmprestimo();
@@ -34,7 +34,7 @@ public class Emprestimo {
                 maiorPrazo = prazoItem;
             }
         }
-        
+
         this.dataDevolucao = this.dataEmprestimo.plusDays(maiorPrazo);
         System.out.println("Data de devolução calculada: " + this.dataDevolucao);
     }

@@ -8,7 +8,7 @@ public class Main {
         // Configuração inicial com Titulos e seus prazos específicos
         Titulo tituloCleanCode = new Titulo("Clean Code", "Robert C. Martin", 14);
         Titulo tituloDesignPatterns = new Titulo("Design Patterns", "GoF", 21);
-        
+
         Aluno joao = new Aluno("João Silva");
         Livro cleanCode = new Livro(tituloCleanCode, "EX001");
         Livro designPatterns = new Livro(tituloDesignPatterns, "EX002");
