@@ -1,4 +1,4 @@
-# 📚 Engenharia de Software 2 ### 🏗️ **Seção 3 - Arqui## 📁 Estrutura do Repositórioetura de Software** Material de Estudos
+# 📚 Engenharia de Software 2 - Material de Estudos
 
 Este repositório contém materiais práticos e exercícios da disciplina **Engenharia de Software 2**, baseados no livro **"Engenharia de Software: Do Requisito ao Projeto"** do Professor **André Menolli** (2024).
 
